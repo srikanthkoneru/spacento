@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4fc4a388db67035f7639f75ad92c3343
+class ComposerStaticInit0016df00f9cd7c7b9e90134118cdd3ba
 {
     public static $classMap = array (
-        'ComposerAutoloaderInit4fc4a388db67035f7639f75ad92c3343' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'ComposerAutoloaderInit0016df00f9cd7c7b9e90134118cdd3ba' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInit4fc4a388db67035f7639f75ad92c3343' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Composer\\Autoload\\ComposerStaticInit0016df00f9cd7c7b9e90134118cdd3ba' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Spacento' => __DIR__ . '/../..' . '/includes/class-spacento.php',
         'Spacento_Activator' => __DIR__ . '/../..' . '/includes/class-spacento-activator.php',
@@ -34,7 +34,7 @@ class ComposerStaticInit4fc4a388db67035f7639f75ad92c3343
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit4fc4a388db67035f7639f75ad92c3343::$classMap;
+            $loader->classMap = ComposerStaticInit0016df00f9cd7c7b9e90134118cdd3ba::$classMap;
 
         }, null, ClassLoader::class);
     }

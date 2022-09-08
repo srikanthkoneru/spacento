@@ -321,9 +321,12 @@ class Spacento_Blocks {
 
 			endif;
 
-			$temp_post_array             = array();
-			$temp_post_array['title']    = esc_html( $temp_post->post_title );
-			$temp_post_array['image']    = esc_url( wp_get_attachment_url( $current_property_gallery[0] ) );
+			$temp_post_array          = array();
+			$temp_post_array['title'] = esc_html( $temp_post->post_title );
+			$temp_post_array['image'] = esc_url( SPACENTO_URL ) . 'public/images/property.webp';
+			if ( isset( $current_property_gallery ) && is_array( $current_property_gallery ) ) {
+				$temp_post_array['image'] = wp_get_attachment_url( $current_property_gallery[0] );
+			}
 			$temp_post_array['text']     = esc_html( $temp_post->post_excerpt );
 			$temp_post_array['url']      = esc_url( get_permalink( $temp_postid ) );
 			$temp_post_array['currency'] = esc_html( $property_currency );
@@ -417,9 +420,12 @@ class Spacento_Blocks {
 
 						endif;
 
-						$temp_post_array             = array();
-						$temp_post_array['title']    = $temp_post->post_title;
-						$temp_post_array['image']    = wp_get_attachment_url( $current_property_gallery[0] );
+						$temp_post_array          = array();
+						$temp_post_array['title'] = $temp_post->post_title;
+						$temp_post_array['image'] = esc_url( SPACENTO_URL ) . 'public/images/property.webp';
+						if ( isset( $current_property_gallery ) && is_array( $current_property_gallery ) ) {
+							$temp_post_array['image'] = wp_get_attachment_url( $current_property_gallery[0] );
+						}
 						$temp_post_array['text']     = $temp_post->post_excerpt;
 						$temp_post_array['url']      = get_permalink( $id );
 						$temp_post_array['currency'] = esc_html( $property_currency );

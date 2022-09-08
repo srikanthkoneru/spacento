@@ -6,9 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInit4fc4a388db67035f7639f75ad92c3343' => $vendorDir . '/composer/autoload_real.php',
+    'ComposerAutoloaderInit0016df00f9cd7c7b9e90134118cdd3ba' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInit4fc4a388db67035f7639f75ad92c3343' => $vendorDir . '/composer/autoload_static.php',
+    'Composer\\Autoload\\ComposerStaticInit0016df00f9cd7c7b9e90134118cdd3ba' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Spacento' => $baseDir . '/includes/class-spacento.php',
     'Spacento_Activator' => $baseDir . '/includes/class-spacento-activator.php',
